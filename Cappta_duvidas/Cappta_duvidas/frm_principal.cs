@@ -40,7 +40,7 @@ namespace Cappta_duvidas
 
 		private void btn_boleto_Click(object sender, EventArgs e)
 		{
-			System.Diagnostics.Process.Start("https://cappta.force.com/ajuda/s/article/Segunda-via-de-boleto");
+			System.Diagnostics.Process.Start("https://secure.corporate.beanywhere.com/integration/integration2.php?uid=48fdd462-68df-11e3-b2ba-12313931119b%7C2109&amp;lang=pt&amp;customer_name=Cnpj:CapptaDuvidas");
 		}
 
 		private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
