@@ -47,12 +47,12 @@
 			this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
 			this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.linkLabel1.DisabledLinkColor = System.Drawing.Color.SpringGreen;
-			this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+			this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.linkLabel1.ForeColor = System.Drawing.Color.White;
 			this.linkLabel1.LinkColor = System.Drawing.Color.White;
-			this.linkLabel1.Location = new System.Drawing.Point(396, 618);
+			this.linkLabel1.Location = new System.Drawing.Point(285, 486);
 			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(605, 31);
+			this.linkLabel1.Size = new System.Drawing.Size(492, 25);
 			this.linkLabel1.TabIndex = 9;
 			this.linkLabel1.TabStop = true;
 			this.linkLabel1.Text = "Não encontrou o que procurava? Clique Aqui!";
@@ -69,9 +69,9 @@
 			this.btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGreen;
 			this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn_cancel.Location = new System.Drawing.Point(402, 92);
+			this.btn_cancel.Location = new System.Drawing.Point(302, 55);
 			this.btn_cancel.Name = "btn_cancel";
-			this.btn_cancel.Size = new System.Drawing.Size(241, 207);
+			this.btn_cancel.Size = new System.Drawing.Size(195, 167);
 			this.btn_cancel.TabIndex = 10;
 			this.btn_cancel.UseVisualStyleBackColor = false;
 			this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -87,9 +87,9 @@
 			this.btn_reimp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_reimp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_reimp.ForeColor = System.Drawing.Color.Transparent;
-			this.btn_reimp.Location = new System.Drawing.Point(753, 92);
+			this.btn_reimp.Location = new System.Drawing.Point(563, 55);
 			this.btn_reimp.Name = "btn_reimp";
-			this.btn_reimp.Size = new System.Drawing.Size(239, 207);
+			this.btn_reimp.Size = new System.Drawing.Size(195, 167);
 			this.btn_reimp.TabIndex = 11;
 			this.btn_reimp.UseVisualStyleBackColor = false;
 			this.btn_reimp.Click += new System.EventHandler(this.btn_reimp_Click);
@@ -104,9 +104,9 @@
 			this.btn_boleto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGreen;
 			this.btn_boleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_boleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn_boleto.Location = new System.Drawing.Point(753, 369);
+			this.btn_boleto.Location = new System.Drawing.Point(563, 296);
 			this.btn_boleto.Name = "btn_boleto";
-			this.btn_boleto.Size = new System.Drawing.Size(239, 207);
+			this.btn_boleto.Size = new System.Drawing.Size(195, 165);
 			this.btn_boleto.TabIndex = 12;
 			this.btn_boleto.UseVisualStyleBackColor = false;
 			this.btn_boleto.Click += new System.EventHandler(this.btn_boleto_Click);
@@ -121,9 +121,9 @@
 			this.btn_portal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGreen;
 			this.btn_portal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_portal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn_portal.Location = new System.Drawing.Point(402, 369);
+			this.btn_portal.Location = new System.Drawing.Point(302, 296);
 			this.btn_portal.Name = "btn_portal";
-			this.btn_portal.Size = new System.Drawing.Size(241, 207);
+			this.btn_portal.Size = new System.Drawing.Size(195, 165);
 			this.btn_portal.TabIndex = 13;
 			this.btn_portal.UseVisualStyleBackColor = false;
 			this.btn_portal.Click += new System.EventHandler(this.btn_portal_Click);
@@ -145,7 +145,7 @@
 			this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
 			this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Location = new System.Drawing.Point(1004, 17);
+			this.button1.Location = new System.Drawing.Point(780, 17);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(47, 38);
 			this.button1.TabIndex = 15;
@@ -166,7 +166,7 @@
 			this.panel1.Controls.Add(this.linkLabel1);
 			this.panel1.Location = new System.Drawing.Point(-3, -5);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1056, 696);
+			this.panel1.Size = new System.Drawing.Size(840, 558);
 			this.panel1.TabIndex = 5;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 			// 
@@ -174,7 +174,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1050, 688);
+			this.ClientSize = new System.Drawing.Size(836, 549);
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
