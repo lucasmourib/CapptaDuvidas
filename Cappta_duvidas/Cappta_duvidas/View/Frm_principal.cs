@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using Cappta_duvidas.Controller;
+using System;
 using System.Windows.Forms;
 
 namespace Cappta_duvidas
 {
-	public partial class frm_principal : Form
+	public partial class Frm_principal : Form
 	{
-		public frm_principal()
+		HandleConfig config;
+		public Frm_principal()
 		{
 			InitializeComponent();
+			this.config = new HandleConfig();
 		}
 
 		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -24,23 +21,16 @@ namespace Cappta_duvidas
 		private void btn_cancel_Click(object sender, EventArgs e)
 		{
 			System.Diagnostics.Process.Start("https://cappta.force.com/ajuda/s/article/Como-cancelar-uma-venda");
-		} 
+		}
 
 		private void btn_reimp_Click(object sender, EventArgs e)
 		{
 			System.Diagnostics.Process.Start("https://cappta.force.com/ajuda/s/article/Como-reimprimir-o-comprovante-de-uma-venda");
-
-			
 		}
 
 		private void btn_portal_Click(object sender, EventArgs e)
 		{
 			System.Diagnostics.Process.Start("https://cappta.force.com/ajuda/s/article/Meu-primeiro-acesso-no-Portal-de-Vendas-Cappta");
-		}
-
-		private void btn_boleto_Click(object sender, EventArgs e)
-		{
-			System.Diagnostics.Process.Start("https://secure.corporate.beanywhere.com/integration/integration2.php?uid=48fdd462-68df-11e3-b2ba-12313931119b%7C2109&amp;lang=pt&amp;customer_name=Cnpj:CapptaDuvidas");
 		}
 
 		private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
@@ -61,6 +51,27 @@ namespace Cappta_duvidas
 		private void Frm_principal_Load(object sender, EventArgs e)
 		{
 
+		}
+
+		private void btn_acesso_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				string nome = txtNome.Text;
+				string caso = txtCaso.Text;
+				if (nome == "")
+				{
+					MessageBox.Show("O nome não pode estar vazio");
+					return;
+				}
+
+				NeedSupport.CallNeedSupport(config.ReturnConfig(), nome, caso);
+
+			}
+			catch (Exception)
+			{
+				MessageBox.Show("Ocorreu um erro");
+			}
 		}
 	}
 }

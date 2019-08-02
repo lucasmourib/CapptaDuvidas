@@ -15,7 +15,14 @@ namespace Cappta_duvidas
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new frm_principal());
+
+			HandleConfig config = new HandleConfig();
+			if (config.ConfigExists() == false)
+			{
+				Application.Run(new Frm_cadastro());
+				return;
+			}
+			Application.Run( new Frm_principal());
 		}
 	}
 }

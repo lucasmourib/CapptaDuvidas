@@ -93,16 +93,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_principal.cs">
+    <Compile Include="Controller\HandleConfig.cs" />
+    <Compile Include="Controller\NeedSupport.cs" />
+    <Compile Include="Controller\Regex\ValidateEmail.cs" />
+    <Compile Include="View\Frm_cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_principal.Designer.cs">
-      <DependentUpon>frm_principal.cs</DependentUpon>
+    <Compile Include="View\Frm_cadastro.Designer.cs">
+      <DependentUpon>Frm_cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Frm_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Frm_principal.Designer.cs">
+      <DependentUpon>Frm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Config.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_principal.resx">
-      <DependentUpon>frm_principal.cs</DependentUpon>
+    <EmbeddedResource Include="View\Frm_cadastro.resx">
+      <DependentUpon>Frm_cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Frm_principal.resx">
+      <DependentUpon>Frm_principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,5 +139,6 @@
   <ItemGroup>
     <Content Include="icone final.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

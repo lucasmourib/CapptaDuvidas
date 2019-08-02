@@ -1,6 +1,6 @@
 ﻿namespace Cappta_duvidas
 {
-	partial class frm_principal
+	partial class Frm_principal
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,15 +28,19 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_principal));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_principal));
 			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
 			this.btn_cancel = new System.Windows.Forms.Button();
 			this.btn_reimp = new System.Windows.Forms.Button();
-			this.btn_boleto = new System.Windows.Forms.Button();
+			this.btn_Acesso = new System.Windows.Forms.Button();
 			this.btn_portal = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.button1 = new System.Windows.Forms.Button();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.lblNome = new System.Windows.Forms.Label();
+			this.txtCaso = new System.Windows.Forms.TextBox();
+			this.txtNome = new System.Windows.Forms.TextBox();
+			this.lblProtocolo = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -50,7 +54,7 @@
 			this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.linkLabel1.ForeColor = System.Drawing.Color.White;
 			this.linkLabel1.LinkColor = System.Drawing.Color.White;
-			this.linkLabel1.Location = new System.Drawing.Point(285, 486);
+			this.linkLabel1.Location = new System.Drawing.Point(281, 510);
 			this.linkLabel1.Name = "linkLabel1";
 			this.linkLabel1.Size = new System.Drawing.Size(492, 25);
 			this.linkLabel1.TabIndex = 9;
@@ -94,22 +98,22 @@
 			this.btn_reimp.UseVisualStyleBackColor = false;
 			this.btn_reimp.Click += new System.EventHandler(this.btn_reimp_Click);
 			// 
-			// btn_boleto
+			// btn_Acesso
 			// 
-			this.btn_boleto.BackColor = System.Drawing.Color.Transparent;
-			this.btn_boleto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_boleto.BackgroundImage")));
-			this.btn_boleto.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btn_boleto.FlatAppearance.BorderSize = 0;
-			this.btn_boleto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.ForestGreen;
-			this.btn_boleto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGreen;
-			this.btn_boleto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_boleto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn_boleto.Location = new System.Drawing.Point(563, 296);
-			this.btn_boleto.Name = "btn_boleto";
-			this.btn_boleto.Size = new System.Drawing.Size(195, 165);
-			this.btn_boleto.TabIndex = 12;
-			this.btn_boleto.UseVisualStyleBackColor = false;
-			this.btn_boleto.Click += new System.EventHandler(this.btn_boleto_Click);
+			this.btn_Acesso.BackColor = System.Drawing.Color.Transparent;
+			this.btn_Acesso.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Acesso.BackgroundImage")));
+			this.btn_Acesso.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btn_Acesso.FlatAppearance.BorderSize = 0;
+			this.btn_Acesso.FlatAppearance.MouseDownBackColor = System.Drawing.Color.ForestGreen;
+			this.btn_Acesso.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGreen;
+			this.btn_Acesso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btn_Acesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btn_Acesso.Location = new System.Drawing.Point(563, 331);
+			this.btn_Acesso.Name = "btn_Acesso";
+			this.btn_Acesso.Size = new System.Drawing.Size(195, 165);
+			this.btn_Acesso.TabIndex = 12;
+			this.btn_Acesso.UseVisualStyleBackColor = false;
+			this.btn_Acesso.Click += new System.EventHandler(this.btn_acesso_Click);
 			// 
 			// btn_portal
 			// 
@@ -121,7 +125,7 @@
 			this.btn_portal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGreen;
 			this.btn_portal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_portal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btn_portal.Location = new System.Drawing.Point(302, 296);
+			this.btn_portal.Location = new System.Drawing.Point(302, 331);
 			this.btn_portal.Name = "btn_portal";
 			this.btn_portal.Size = new System.Drawing.Size(195, 165);
 			this.btn_portal.TabIndex = 13;
@@ -157,20 +161,65 @@
 			this.panel1.BackColor = System.Drawing.Color.SeaGreen;
 			this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
 			this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.panel1.Controls.Add(this.lblProtocolo);
+			this.panel1.Controls.Add(this.lblNome);
+			this.panel1.Controls.Add(this.txtCaso);
+			this.panel1.Controls.Add(this.txtNome);
 			this.panel1.Controls.Add(this.button1);
 			this.panel1.Controls.Add(this.label1);
 			this.panel1.Controls.Add(this.btn_portal);
-			this.panel1.Controls.Add(this.btn_boleto);
+			this.panel1.Controls.Add(this.btn_Acesso);
 			this.panel1.Controls.Add(this.btn_reimp);
 			this.panel1.Controls.Add(this.btn_cancel);
 			this.panel1.Controls.Add(this.linkLabel1);
+			this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.panel1.Location = new System.Drawing.Point(-3, -5);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(840, 558);
 			this.panel1.TabIndex = 5;
 			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 			// 
-			// frm_principal
+			// lblNome
+			// 
+			this.lblNome.AutoSize = true;
+			this.lblNome.BackColor = System.Drawing.Color.Transparent;
+			this.lblNome.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblNome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.lblNome.Location = new System.Drawing.Point(560, 233);
+			this.lblNome.Name = "lblNome";
+			this.lblNome.Size = new System.Drawing.Size(45, 15);
+			this.lblNome.TabIndex = 18;
+			this.lblNome.Text = "Nome";
+			// 
+			// txtCaso
+			// 
+			this.txtCaso.Location = new System.Drawing.Point(563, 300);
+			this.txtCaso.Name = "txtCaso";
+			this.txtCaso.Size = new System.Drawing.Size(90, 20);
+			this.txtCaso.TabIndex = 17;
+			// 
+			// txtNome
+			// 
+			this.txtNome.Location = new System.Drawing.Point(563, 251);
+			this.txtNome.Name = "txtNome";
+			this.txtNome.Size = new System.Drawing.Size(195, 20);
+			this.txtNome.TabIndex = 16;
+			// 
+			// lblProtocolo
+			// 
+			this.lblProtocolo.AutoSize = true;
+			this.lblProtocolo.BackColor = System.Drawing.Color.Transparent;
+			this.lblProtocolo.Cursor = System.Windows.Forms.Cursors.Arrow;
+			this.lblProtocolo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblProtocolo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.lblProtocolo.Location = new System.Drawing.Point(560, 282);
+			this.lblProtocolo.Name = "lblProtocolo";
+			this.lblProtocolo.Size = new System.Drawing.Size(68, 15);
+			this.lblProtocolo.TabIndex = 19;
+			this.lblProtocolo.Text = "Protocolo";
+			// 
+			// Frm_principal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,7 +229,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
-			this.Name = "frm_principal";
+			this.Name = "Frm_principal";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Duvidas";
 			this.Load += new System.EventHandler(this.Frm_principal_Load);
@@ -195,10 +244,14 @@
 		private System.Windows.Forms.LinkLabel linkLabel1;
 		private System.Windows.Forms.Button btn_cancel;
 		private System.Windows.Forms.Button btn_reimp;
-		private System.Windows.Forms.Button btn_boleto;
+		private System.Windows.Forms.Button btn_Acesso;
 		private System.Windows.Forms.Button btn_portal;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Label lblNome;
+		private System.Windows.Forms.TextBox txtCaso;
+		private System.Windows.Forms.TextBox txtNome;
+		private System.Windows.Forms.Label lblProtocolo;
 	}
 }
